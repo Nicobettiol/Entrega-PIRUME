@@ -1,0 +1,219 @@
+.grillas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+
+    .nav {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .grillasBoton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grillas2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .articulo1{
+            .card{
+                .card-body{
+                    .tituloVino{
+                        font-family: $titulo;
+                        color: bisque;
+                        font-weight: bold;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .precio{
+                        text-align: center;
+                        font-family: $titulo;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .modal-title{
+                font-family: $titulo;
+                font-size: 25px;
+                font-weight: bold;
+                color: #a2453d;
+            }
+
+            .modalFotoVino{
+                width: 200px;
+                height: 200px;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .textoDescripcionVino{
+                margin-left: 10px;
+                margin-top: 10px;
+
+                .descripcionVino{
+                    text-align: center;
+                    font-family: $titulo;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                .precioVino{
+                    font-size: 20px;
+                    color: #a2453d;
+                    font-family: $titulo;
+                }
+            }
+        }
+    }
+
+    .botonPalabra{
+        color: #a2453d;
+        font-family: $titulo;
+        font-weight: bolder;
+    }
+    
+}
+
+
+@media (max-width: 780px){
+
+    .nav{
+        align-items: center;
+    }
+
+    .grillas{
+        margin-left: 0%;
+    }
+
+    .grillasBoton{
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    
+    .grillas2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalFotoVino{
+        display: none;
+    }
+}
+
+/* BOTON FLOTANTE */
+
+/*.btn-flotante {
+        border-radius: 5px;
+        background-color: $colorSecundario; 
+        padding: 18px 30px; 
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        transition: all 300ms ease 0ms;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+
+    .btn-flotante:hover {
+        background-color: #333; /* Color de fondo al pasar el cursor */
+       /* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+        transform: translateY(-7px);
+    }
+}*/
+
+@media only screen and (max-width: 600px) {
+        .btn-flotante {
+            font-size: 14px;
+            padding: 12px 20px;
+            bottom: 20px;
+            right: 20px;
+         }
+}
+
+
+.item {
+    background-color:#bb6942;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: $colorPrincipal
+  }
+  
+  .item-image {
+    height: 350px;
+    width: 350px;
+  }
+  
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+    color: $colorPrincipal
+  }
+  
+  .item-details > .item-price {
+    margin: 0;
+  }
+  
+  /* ? SHOPPING CART */
+  .shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  
+  .store{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 20%;
+  }
+
+  .shopping-cart{
+      margin-left: 20%;
+
+      .btn-success{
+          margin-left: 80%;
+      }
+  }

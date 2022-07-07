@@ -1,0 +1,59 @@
+.bannerInicio{ /*imagen de inicio*/
+    width: 100%;
+    height: 450px;
+    background-image: url('../imagenes/viñas.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    .buttonInicio{ /*boton ver productos*/
+        font-family: $titulo;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: black;
+        margin-top: 200px;
+        margin-left: 20%;
+        border: #333;
+        width: 200px;
+        height: 50px;
+    }
+
+
+}
+
+@media (max-width: 780px){
+    .bannerInicio{
+        height: 68vh;
+
+        .buttonInicio{
+            height: 15%;
+            width: 37%;
+            margin-top: 55%;
+            margin-left: 5%;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px){
+    .bannerInicio{
+        height: 68vh;
+
+        .buttonInicio{
+            height: 15%;
+            width: 37%;
+            margin-top: 55%;
+            margin-left: 5%;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+
+            a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

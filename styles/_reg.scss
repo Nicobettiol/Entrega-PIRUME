@@ -1,0 +1,154 @@
+.contenedorIniciarSesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .parteRegistrarse{
+        background-color: #a2453d;
+        height: 440px;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: center;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+
+        .tituloParteRegistrarse{
+            font-family: $titulo;
+            font-size: ($nroLetras*2)+3;
+            margin-left: 25px;
+            margin-top: 100px;
+            margin-bottom: $nroLetras + 4;
+            color: bisque; 
+        }
+
+        .parrafoRegistrarse{
+            font-size: $nroLetras;
+            font-family: "Niramit", sans-serif;
+            margin-bottom: ($nroLetras*2)+8;
+            color: white;
+        }
+
+        .botonRegistrarse{
+            background-color: transparent;
+            border-color: #FFFFFF;
+            border-radius: 20px;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+            font-family: "Niramit", sans-serif;
+        }
+
+    }
+
+}
+
+.parteIniciarSesion{
+    background-color: white;
+    height: 440px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.6s ease-in-out;
+
+    .tituloIniciarSesion{
+        font-family: "Niramit", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 25px;
+        margin-top: 10px; 
+    }
+
+    .parrafoIniciarSesion{
+        font-size: $nroLetras;
+        font-family: "Niramit", sans-serif;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .formularioIniciarSesion{
+        display: flex;
+        flex-direction: column;
+
+        .inputIniciarSesion{
+            background-color: #eee;
+            border: none;
+            padding: 8px;
+            margin: 8px 0;
+            width: 200px;
+            font-family: "Niramit", sans-serif;
+        }
+    }
+
+    .botonIniciarSesion{
+        border-radius: 20px;
+        border: 1px solid #a2453d;
+        background-color: #a2453d;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: transform 80ms ease-in;
+        font-family: "Niramit", sans-serif;
+        transition: transform 80ms ease-in;
+    }
+}
+
+.imagenIniciarSesion{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.extra{
+    display: none;
+    font-family: "Niramit", sans-serif;
+}
+
+.extraLink{
+    color: #a2453d;
+}
+
+@media (max-width:780px){
+    .contenedorIniciarSesion{
+        flex-direction: column;
+
+        .parteIniciarSesion{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .parteRightIniciarSesion{
+            display: none;
+        }
+        .parteRegistrarse{
+            display: none;
+        }
+    }
+    .extra{
+        display: flex;
+        margin-top: 5%;
+    }
+}
+ 
+
+
+

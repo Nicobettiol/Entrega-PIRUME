@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--SEO-->
+    <!--Keywords-->
+    <meta name="keywords" content="vino, categoria, tipo vino, venta de vino, tragos">
+    <meta name="description" content="Encontrá diferentes vinos y tragos para festejar con amigos, familia o solo.">
+    <!--Fin Seo-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bost5/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Niramit: wght @ 200 & display = swap "rel =" stylesheet "> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PIRUME - VINOTECA / Productos</title>
+</head>
+<body>
+    <header class="grillasMenuInicio">
+        <img alt="logo de la empresa" id="apertura" src="../imagenes/logo.PNG">
+        <h1>PIRUME - VINOTECA</h1>
+        <p class="inicioSesion"><a href="../auxiliares/sesion.html">Iniciar Sesión</a></p>
+        <a href="../auxiliares/sesion.html"><img class="imgHeader" src="../imagenes/usuario.png"></a>
+    </header>
+    
+    <input type="checkbox" id="btn-menu">
+    <label class="labelMenu" for="btn-menu"><svg class="imglista" xmlns="http://www.w3.org/2000/svg" idth="35" height="35"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg></label>
+    <nav class="menuPrincipal">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../secciones/nosotros.html">NOSOTROS</a></li>
+        <li><a href="../secciones/productos1.html">PRODUCTOS</a></li>
+        <li><a href="../secciones/ofertas.html">OFERTAS</a></li>
+        <li><a href="../secciones/pedidos.html">PEDIDOS</a></li>
+      </ul>
+    </nav>
+
+    <div class="formularioFactura">
+        <h3>Factura Electrónica</h3>
+        <form id="formDatos" action="Iniciar Sesion">
+          <label class="formFactura"> Nombre Cliente: </label><input id="nombreCliente" type="text"><br>
+          <br>
+          <label class="formFactura"> DNI: </label><input id="dni" type="text">
+          <br>
+          <br>
+          <label class="formFactura"> Dirección: </label><input id="direccion" type="text">
+          <br>
+          <br>
+          <label class="formFactura"> Monto Total: </label><input id="montoTotal" type="text">
+          <br>
+          <br>
+          <label class="formFactura"> Cuotas: </label><input id="cuotas" type="text">
+          <br>
+          <br>
+          <div id="calculoCuotas"></div>
+          <br>
+          <br>
+          <button onclick="mostrarInfo()" id="cargar" type="submit">Mostrar Datos</button>
+      </form>
+    </div>
+      
+        <!--SCRIPT JAVASCRIPT-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../inicio.js"></script>
+</body>
+</html>

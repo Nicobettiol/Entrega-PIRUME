@@ -1,0 +1,47 @@
+/*Generales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//variables
+
+$titulo: 'Niramit', sans-serif;
+$colorPrincipal: bisque;
+$colorSecundario: #a2453d;
+$nroLetras: 16px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $titulo;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: $colorPrincipal;
+}
+
+body{
+    background-color: $colorPrincipal;
+}
+
+@keyframes efectoImagen{
+    0%{
+        transform: rotateX(90deg);
+    }
+
+    25%{
+        transform: rotateX(180deg);
+    }
+    50%{
+        transform: rotateX(270deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}

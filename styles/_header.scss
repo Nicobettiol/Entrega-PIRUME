@@ -1,0 +1,186 @@
+//variables
+
+$titulo: "Niramit", sans serif;
+$colorPrincipal: bisque;
+$colorSecundario: #a2453d;
+
+header{
+    background-color: $colorSecundario;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+    h1{
+        color: $colorPrincipal;
+        font-size: 60px;
+        margin-left: 50px;
+        margin-top: 50px;
+        flex-basis: 40%;
+    }
+    
+    #apertura{ /*logo de la empresa*/
+        margin-left: 10px;
+        display: inline-block;
+        width:180px;
+        height: 180px;
+        margin-left: 50px;
+        animation-name: efectoImagen;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+
+    .imgHeader{
+        display: none;
+    }
+}
+
+/*MENU GENERAL*/
+
+#btn-menu{
+        display: none;
+}
+
+.labelMenu{
+    display: none;
+    height: 30px;
+    width: 100%;
+    padding-bottom: 38px;
+    padding-right: 20px;
+    background-color:#333;
+
+    .imglista{
+        color: bisque;
+    }
+
+}
+
+.menuPrincipal{
+    z-index: 500;
+}
+
+.menuPrincipal ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    
+    li{
+        a{
+            display: block;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            list-style: none;
+        }
+        
+        &:hover{
+            background-color: $colorSecundario;
+        }
+    }
+}
+
+@media (max-width: 780px){
+    header{
+        justify-content: center;
+        height: 18vh;
+
+        h1{
+            font-size: 1.5em;
+            margin-top: 60px;
+            flex-basis: 70%;
+            text-align: center;
+        }
+
+        #apertura{
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin-left: 0px;
+        }
+
+        .imgHeader{
+            display: flex;
+        }
+
+        .inicioSesion a{
+            display: none;
+        }
+    }
+
+
+    .labelMenu{
+        display: block;
+        height: 6vh;
+
+        .lista{
+            margin-top: 1%;
+        }
+    }
+
+    .labelMenu:hover{
+        cursor: pointer;
+    }
+
+    .menuPrincipal{
+        position: absolute;
+        background-color: #333;
+        width: 70%;
+        margin-left: -70%;
+        z-index: 500;
+        align-items: center;
+    }
+
+    .menuPrincipal ul{
+        flex-direction: column;
+    }
+
+
+
+    #btn-menu:checked ~ .menuPrincipal{
+        margin: 0;
+    }
+    
+}
+
+@media (max-width: 680px){
+    header{
+        justify-content: center;
+        height: 18vh;
+
+        h1{
+            font-size: 28px;
+            margin-top: 40px;
+            flex-basis: 70%;
+            text-align: center;
+        }
+
+        #apertura{
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin-left: 0px;
+        }
+
+        .imgHeader{
+            display: flex;
+        }
+
+        .inicioSesion a{
+            display: none;
+        }
+    }
+
+    .labelMenu{
+        height: 6vh;
+
+        .lista{
+            margin-top: 1%;
+        }
+    }
+
+    .menuPrincipal{
+        align-items: center;
+    }   
+}

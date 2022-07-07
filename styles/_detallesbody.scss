@@ -1,0 +1,57 @@
+.contenedorDetalle{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 14px;
+    justify-content: space-around;
+    margin-bottom: 8%;
+
+    .detalleGeneral{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 5%;
+
+        .aDetalle{
+            color:#333;
+            margin-top: 1.5%;
+        }
+        
+    }
+    
+    .detalleOrganizados{
+        background-color: #333;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        box-shadow: 0 5px 5px #333;
+
+        .imagenDetalle{
+            width: 115px;
+        }
+
+        .explicacionDetalle{
+            margin-left: 2%;
+            margin-top: 1%;
+
+            .tituloDetalle{
+                font-family: $titulo;
+                font-size: 20px;
+                color: $colorPrincipal;
+            }
+
+            .parrafoDetalle{
+                font-family: $titulo;
+                color: $colorPrincipal;
+                padding-top: 2%;
+            }
+        }
+
+        &:hover{
+            background-color:$colorSecundario;
+        }
+    }
+}

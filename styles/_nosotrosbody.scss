@@ -1,0 +1,110 @@
+.container{
+    width: 800px;
+    margin: 45px 0;
+    display: felx;
+    justify-content: space-between;
+
+    .parrafoNosotros{
+        margin-top: 25px;
+        margin-left: 20%;
+        font-family: $titulo;
+        font-size: 16px;
+    }
+}
+
+h2{
+    font-family: $titulo;
+    font-size: ($nroLetras*2)+3;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+
+.articulos{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color:#333;
+    border-radius: 20px;
+
+    .containerPresentacion{
+        background-color: #bb6942;
+        -webkit-transition: background-color 1s linear;
+        transition: background-color 1s linear;
+        width: 25%;
+        background-color: #a2453d;
+        border-radius: 15px;
+        box-shadow: 0px 10px 10px -6px rgb(59, 55, 55);
+        background-color:#bb6942;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+        &:hover{
+            background-color: $colorPrincipal; 
+        }
+
+        .fotosPresentacionRomi{
+            width: 110px;
+            height: 109px;
+            border-radius: 20px;
+        }
+
+        .presentacionParrafosNosotros{
+            font-family: $titulo;
+            font-size: 14px;
+            text-align: center;
+            padding-left: 2px;
+            padding-right: 2px;
+            padding-bottom: 4px;
+        }
+
+        .tituloNombreNosotros{
+            font-family: $titulo;
+            color: bisque;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+
+      }
+}
+
+
+@media (max-width: 780px){
+    .articulos{
+        flex-wrap: wrap;
+
+        .containerPresentacion{
+            width: 95%;
+
+            .presentacionParrafosNosotros{
+                font-size: 16px;
+            }
+        }
+    }
+
+    h2{
+        font-size: 22px;
+        margin-left: 6%;
+    }
+
+    .container{
+        width: 100%;
+
+        .parrafoNosotros{
+            margin-left: 5%;
+            font-size: 18px;
+        }
+    }
+    
+}
+
+
+
+
